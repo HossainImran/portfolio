@@ -18,6 +18,8 @@
   /* color */
   --clr-slate900: #0f172a;
   --clr-slate600: #475569;
+  --clr-slate400: #94a3b8;
+  --clr-slate300: #cbd5e1;
   --clr-indigo600: #4f46e5;
   --clr-neonBlue: #1f51ff;
   --clr-sky500: #0ea5e9;
@@ -26,6 +28,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: calc(1em + 0.5em);
 }
 html {
   scroll-behavior: smooth;
@@ -42,6 +45,7 @@ body {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: var(--clr-slate900);
+  color: white;
 }
 
 .container {
@@ -50,11 +54,16 @@ body {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .section {
-  margin-top: 80px;
+  margin-top: 100px;
+}
+
+strong {
+  color: var(--clr-neonBlue);
+  font-size: var(--text-lg);
 }
 
 /* xs */
