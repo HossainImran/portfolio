@@ -1,0 +1,114 @@
+.work__section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.container__work {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.work__section__heading {
+  font-size: var(--text-xl);
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+}
+.skill__section,
+.tool__section,
+.experience__section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.skill__name,
+.tool__name {
+  /* width: 400px; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #1e293b;
+  transition: all 0.3s ease;
+  font-size: var(--text-base);
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.experience__name {
+  /* width: 400px; */
+  /* height: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.3rem;
+  padding: 1rem;
+  background-color: #1e293b;
+  transition: all 0.3s ease;
+  font-size: var(--text-base);
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.skill__name:hover,
+.tool__name:hover,
+.experience__name:hover {
+  transform: translateX(10px);
+}
+
+.experience-type {
+  font-size: var(--text-base);
+  color: var(--clr-slate300);
+}
+
+.experience-time {
+  font-size: var(--text-base);
+  color: var(--clr-slate400);
+}
+
+.experience-details {
+  font-size: var(--text-base);
+  color: white;
+}
+.skill__name,
+.tool__name,
+.experience__name {
+  width: 100%;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+/* sm */
+/* @media (min-width: 640px) {} */
+/* md */
+/* @media (min-width: 768px) {} */
+/* lg */
+@media (min-width: 1024px) {
+  .container__work {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .skill__name,
+  .tool__name,
+  .experience__name {
+    width: 300px;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .skill__name,
+  .tool__name,
+  .experience__name {
+    width: 350px;
+  }
+}
+/* 2xl  */
+@media (min-width: 1536px) {
+  .skill__name,
+  .tool__name,
+  .experience__name {
+    width: 400px;
+  }
+}
