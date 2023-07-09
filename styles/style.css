@@ -24,6 +24,9 @@
   --clr-neonBlue: #1f51ff;
   --clr-sky500: #0ea5e9;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   margin: 0;
