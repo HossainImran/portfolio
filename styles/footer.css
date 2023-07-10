@@ -1,0 +1,22 @@
+.footer__section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.footer__text {
+  font-size: var(--text-sm);
+}
+.fa-copyright {
+  font-size: var(--text-xs);
+}
+
+/* 2xl  */
+@media (min-width: 1536px) {
+  .footer__text {
+    font-size: var(--text-base);
+  }
+  .fa-copyright {
+    font-size: var(--text-sm);
+  }
+}
