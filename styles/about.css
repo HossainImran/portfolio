@@ -71,13 +71,14 @@
 }
 
 .about-image {
-  height: 350px;
+  /* height: 350px; */
+  width: 100%;
 }
 
 /* xs */
 @media (min-width: 475px) {
   .about-image {
-    height: 500px;
+    height: 550px;
   }
 }
 /* sm */
@@ -92,6 +93,7 @@
   }
   .about-image {
     height: 400px;
+    width: auto;
   }
   .edu__title {
     font-size: var(--text-xl);
@@ -108,7 +110,7 @@
 /* lg */
 @media (min-width: 1024px) {
   .about-image {
-    height: 500px;
+    height: 450px;
   }
   .about__details {
     font-size: var(--text-base);
@@ -128,7 +130,7 @@
 /* xl */
 @media (min-width: 1280px) {
   .about-image {
-    height: 600px;
+    height: 500px;
   }
   .section__heading {
     font-size: var(--text-5xl);
@@ -150,6 +152,9 @@
 }
 /* 2xl  */
 @media (min-width: 1536px) {
+  .about-image {
+    height: 600px;
+  }
   .section__heading {
     font-size: var(--text-5xl);
   }
