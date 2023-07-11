@@ -1,4 +1,5 @@
 import '../styles/about.css';
+import '../styles/animation.css';
 import '../styles/contact.css';
 import '../styles/footer.css';
 import '../styles/header.css';

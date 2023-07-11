@@ -1,0 +1,41 @@
+@keyframes slideintop {
+  from {
+    transform: translateY(150px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideinleft {
+  from {
+    transform: translateX(-150px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideinright {
+  from {
+    transform: translateX(150px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animation__left-right {
+  animation: slideinleft 0.8s ease-in 0s 1 normal none;
+}
+
+.animation__right-left {
+  animation: slideinright 0.8s ease-in 0s 1 normal none;
+}
+
+.animation__bottom-top {
+  animation: slideintop 0.8s ease-in 0s 1 normal none;
+}

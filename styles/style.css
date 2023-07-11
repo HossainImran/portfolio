@@ -52,6 +52,11 @@ body {
   color: white;
 }
 
+strong {
+  color: var(--clr-neonBlue);
+  font-size: var(--text-lg);
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -63,11 +68,6 @@ body {
 
 .section {
   margin-top: 100px;
-}
-
-strong {
-  color: var(--clr-neonBlue);
-  font-size: var(--text-lg);
 }
 
 /* xs */

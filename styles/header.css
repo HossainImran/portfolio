@@ -25,6 +25,71 @@
   display: none;
 }
 
+.dropdown__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-slate900);
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown__manu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.toggle__btn2 {
+  display: none;
+  width: 24px;
+  height: 24px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.dropdown__links,
+.resume__btn {
+  color: white;
+  font-size: var(--text-base);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dropdown__links:hover {
+  color: var(--clr-sky500);
+}
+
+.dropdown__line {
+  border: 1px solid var(--clr-slate600);
+  padding-left: 10rem;
+}
+
+.resume__btn {
+  background-color: #38bdf8;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
 /* xs */
 /* @media (min-width: 475px) {} */
 /* sm */

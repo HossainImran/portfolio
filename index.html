@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/projects.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/animation.css">
     <link rel="stylesheet" href="./styles/modern-normalize.css" />
     <link
       rel="stylesheet"
@@ -21,19 +22,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      ScrollReveal({ duration: 1000 })
+    </script>
   </head>
   <body>
     <header class="header container">
       <div class="logo__section">
-        <a href="#"><h1 class="logo">hossainImran</h1></a>
+        <a href="#"><h1 class="logo animation__left-right">hossainImran</h1></a>
       </div>
-      <div class="nav__section">
+      <div class="nav__section animation__right-left">
         <nav>
           <ul class="nav__menu">
-            <li><a class="nav__links" href="#">About</a></li>
-            <li><a class="nav__links" href="#">Work</a></li>
-            <li><a class="nav__links" href="#">Projects</a></li>
-            <li><a class="nav__links" href="#">Contact</a></li>
+            <li><a class="nav__links" href="#about">About</a></li>
+            <li><a class="nav__links" href="#work">Work</a></li>
+            <li><a class="nav__links" href="#projects">Projects</a></li>
+            <li><a class="nav__links" href="#contact">Contact</a></li>
             <li class="nav__line"></li>
             <li class="btn"><a class="resume__btn" href="#">Resume</a></li>
           </ul>
@@ -53,8 +58,26 @@
         </button>
       </div>
     </header>
+    <div class="dropdown__nav">
+      <nav>
+        <ul class="dropdown__manu">
+          <button class="toggle__btn2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>
+            
+          </button>
+          <li><a class="dropdown__links" href="#about">About</a></li>
+          <li><a class="dropdown__links" href="#work">Work</a></li>
+          <li><a class="dropdown__links" href="#projects">Projects</a></li>
+          <li><a class="dropdown__links" href="#contact">Contact</a></li>
+          <li class="dropdown__line"></li>
+          <li class="btn"><a class="resume__btn" href="#">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
-      <section class="hero__section container section">
+      <section class="hero__section container section animation__bottom-top">
         <div class="hero__image__section">
           <img class="hero_image" src="images/hero.png" alt="" />
         </div>
@@ -68,9 +91,9 @@
           </p>
         </div>
       </section>
-      <section class="about__section container section">
+      <section id="about" class="about__section container section">
         <h1 class="section__heading">About</h1>
-        <div class="conainer__about">
+        <div class="container__about">
           <div class="about__content">
             <p class="about__details">
               Hey there, I'm a <strong>Front-end Web Developer</strong> and an
@@ -98,7 +121,7 @@
               <hr />
               <h3 class="edu__subtitle">Premier University , Chittagong</h3>
               <p class="edu__details">B.Sc. in CSE</p>
-              <p class="edu__details">2000 - 2000</p>
+              <p class="edu__details">2015 - 2020</p>
             </div>
           </div>
           <div class="about__image__section">
@@ -106,7 +129,7 @@
           </div>
         </div>
       </section>
-      <section class="work__section container section">
+      <section id="work" class="work__section container section">
         <h1 class="section__heading">Work</h1>
         <div class="container__work">
           <div class="skill__section">
@@ -170,7 +193,7 @@
           </div>
         </div>
       </section>
-      <section class="projects__section container section">
+      <section id="projects" class="projects__section container section">
         <h1 class="section__heading">Projects</h1>
         <div class="container__project">
           <div class="project__content">
@@ -297,7 +320,7 @@
           </div>
         </div>
       </section>
-      <section class="contact__section container section">
+      <section id="contact" class="contact__section container section">
         <h1 class="section__heading">Contact</h1>
         <div class="container__contact">
           <div class="contact__details">
@@ -348,5 +371,7 @@
       <p class="footer__text"> - <i class="fa-regular fa-copyright"></i> Hossain Imran. All Rights Reserved -</p>
     </footer>
     <script type="module" src="script/main.js"></script>
+    <script type="module" src="script/mobile-nav.js"></script>
+    <script src="script/scroll-reveal.js"></script>
   </body>
 </html>
