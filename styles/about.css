@@ -75,6 +75,8 @@
   width: 100%;
 }
 
+/* Making the About Section responsive */
+
 /* xs */
 @media (min-width: 475px) {
   .about-image {
@@ -109,6 +111,9 @@
 }
 /* lg */
 @media (min-width: 1024px) {
+  .about__section {
+    margin-top: 120px;
+  }
   .about-image {
     height: 450px;
   }

@@ -38,6 +38,10 @@
 .contact__links {
   color: white;
   font-size: var(--text-sm);
+  transition: 0.3s ease;
+}
+.contact__links:hover {
+  color: var(--clr-sky500);
 }
 
 .contact__menu i {
@@ -60,6 +64,8 @@
 .contact__btn:hover {
   transform: translateY(-3px);
 }
+
+/* Making the Contact Section responsive */
 
 /* xs */
 @media (min-width: 475px) {

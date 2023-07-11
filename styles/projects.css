@@ -77,6 +77,8 @@
   transform: translateY(-3px);
 }
 
+/* Making the Projects Section responsive */
+
 /* xs */
 @media (min-width: 475px) {
   .content__details {

@@ -10,6 +10,7 @@
 .fa-copyright {
   font-size: var(--text-xs);
 }
+/* Making the Footer Section responsive */
 
 /* 2xl  */
 @media (min-width: 1536px) {
